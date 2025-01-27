@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eShop.Catalog.API</name>
+    </assembly>
+    <members>
+        <member name="T:eShop.Catalog.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:eShop.Catalog.Migrations.Messages">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.Messages.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.Messages.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.Messages.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:eShop.Catalog.Migrations.Messages_2">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.Messages_2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.Messages_2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.Messages_2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:eShop.Catalog.Migrations.AddArrivalDate">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.AddArrivalDate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.AddArrivalDate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:eShop.Catalog.Migrations.AddArrivalDate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="P:eShop.Catalog.Models.Product.OnReorder">
+            <summary>
+            True if item is on reorder
+            </summary>
+        </member>
+        <member name="M:eShop.Catalog.Models.Product.RemoveStock(System.Int32)">
+            <summary>
+            Decrements the quantity of a particular item in inventory and ensures the restockThreshold hasn't
+            been breached. If so, a RestockRequest is generated in CheckThreshold. 
+            
+            If there is sufficient stock of an item, then the integer returned at the end of this call should be the same as quantityDesired. 
+            In the event that there is not sufficient stock available, the method will remove whatever stock is available and return that quantity to the client.
+            In this case, it is the responsibility of the client to determine if the amount that is returned is the same as quantityDesired.
+            It is invalid to pass in a negative number. 
+            </summary>
+            <param name="quantityDesired"></param>
+            <returns>int: Returns the number actually removed from stock. </returns>
+            
+        </member>
+        <member name="M:eShop.Catalog.Models.Product.AddStock(System.Int32)">
+            <summary>
+            Increments the quantity of a particular item in inventory.
+            <param name="quantity"></param>
+            <returns>int: Returns the quantity that has been added to stock</returns>
+            </summary>
+        </member>
+    </members>
+</doc>
