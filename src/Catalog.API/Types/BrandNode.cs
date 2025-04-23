@@ -1,4 +1,4 @@
-using HotChocolate.Pagination;
+using GreenDonut.Data;
 using HotChocolate.Types.Pagination;
 
 namespace eShop.Catalog.Types;

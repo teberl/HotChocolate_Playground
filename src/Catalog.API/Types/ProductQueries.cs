@@ -1,6 +1,6 @@
+using GreenDonut.Data;
 using HotChocolate.Data.Filters;
 using HotChocolate.Execution.Processing;
-using HotChocolate.Pagination;
 using HotChocolate.Types.Pagination;
 
 namespace eShop.Catalog.Types;

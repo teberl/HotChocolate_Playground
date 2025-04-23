@@ -1,8 +1,6 @@
 using System.Linq.Expressions;
 using eShop.Catalog.Services.Errors;
-using HotChocolate.Data.Filters;
-using HotChocolate.Execution.Processing;
-using HotChocolate.Pagination;
+using GreenDonut.Data;
 
 namespace eShop.Catalog.Services;
 

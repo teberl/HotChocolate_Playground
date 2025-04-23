@@ -1,5 +1,5 @@
 using eShop.Catalog.Services.Errors;
-using HotChocolate.Pagination;
+using GreenDonut.Data;
 using ISession = eShop.Catalog.Sessions.ISession;
 
 namespace eShop.Catalog.Services;
